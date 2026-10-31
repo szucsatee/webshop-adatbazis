@@ -1,5 +1,39 @@
 # PC Webshop Adatbázis Tervezés - relációs adatbázis
 
+## -----------------------
+
+kezdő vagyok, csak ismerkedem ......
+
+mi is ez?
+röviden pár szót erről 
+
+database létrehozás
+használat -- use
+adattabla letrehozas
+lekerdezes
+
+azure mysql
+
+epitsunk fel egy webshop adatbazist...legyen ez egy informatikai webaruhaz webshopja
+adattáblákat kell csinálni
+
+tervezzunk adatbazist
+create database, create table
+
+nem tudok hol játszani vele, hogy ne generáljon költséget
+találtam online mySQL playgroundot, én ezt használtam: 
+
+https://onecompiler.com/mysql 
+
+letöltöm a mysql servert a saját gépemre innen:
+https://dev.mysql.com/downloads/
+telepítés
+
+DBeaver
+
+
+## ---------------
+
 Egy egyszerűsített informatikai webáruház adatbázis-modellje, amely bemutatja az entitások közötti kapcsolatokat, idegen kulcsok (`FOREIGN KEY`) használatát és összetett statisztikai lekérdezéseket.
 
 
