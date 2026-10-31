@@ -19,6 +19,9 @@ Rengetegszer hibáztam, míg felépült az adatbázis.
 Az adatbázis logikailag úgy épül fel, hogy a megrendelések leadásához a törzsadatoknak (vásárlók, termékek, fizetési és szállítási módok) már létezniük kell a rendszerben.
 
 Hogyan csináltam táblákat
+create datebase
+create table
+
 1-2 képet bevág, bash-el megmutat
 
 ### Adatbázis táblák listája:
