@@ -5,9 +5,11 @@ Az abszolút kezdőknek mint én ajánlom, hogy olvassák el ezeket a cikkeket:
 [![SQL alapok kezdőknek](https://shields.io)](https://webiskola.hu/sql-alapok-kezdoknek/ "SQL alapok kezdőknek")
 
 
-Az alapok elsajátítása után, egy olyan online elérhető felületet ,"játszóteret" kerestem, ahol telepítés, ... nélkül tudom kipróbálni magam.
+Az alapok elsajátítása után, egy olyan online elérhető felületet ,"játszóteret" kerestem, amit online, böngészőből tudok futtatni.
 Ezt választottam:
 [![MySQL Online Fordító és Szerkesztő](https://shields.io)](https://onecompiler.com/mysql "Online MySQL lekérdezés futtató")
+
+- 🛠️ [OneCompiler MySQL Online Editor](https://onecompiler.com/mysql "MySQL online fordító") – Egy ingyenes, böngészőből futtatható online MySQL szerkesztő és fordító, ahol telepítés nélkül gyakorolhatod a lekérdezéseket.
 
 
 
