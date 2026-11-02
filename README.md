@@ -44,10 +44,30 @@ ezzel létrehoztuk és használatra bírtuk az adatbázist.
 *   **Categories:** Termékkategóriák (Alaplapok, Processzorok, stb.)
 
 *   **Customers:** Regisztrált vásárlók adatai.
-*   **Payments & Shipping:** Elérhető fizetési és logisztikai módok.
-*   **Produts:** A webshopban elérhető alkatrészek és szoftverek árakkal.
-*   **Orders:** A rendelések törzsadatai (Ki rendelte, hogyan fizetett, hova kéri).
+*   **Payments** Elérhető fizetési módok
+*   Shipping:** Elérhető szállítási módok.
+*   **Produts:** A webshopban elérhető alkatrészek és szoftverek árakkal. ( itt a Foreign key használata )
+*   **Orders:** A rendelések törzsadatai (Ki rendelte, hogyan fizetett, mivel kéri a kiszállítást).
 *   **Order_items:** A kosár tartalma (Melyik rendelésben milyen termékből mennyit vettek).
+
+<img width="483" height="164" alt="image" src="https://github.com/user-attachments/assets/4bc5aa5f-d20b-4d12-b05f-eaec4a42dc66" />
+
+
+```
+-- Customers tábla létrehozása
+CREATE TABLE Customers (
+    customer_id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    phone_number VARCHAR(50)
+);
+```
+
+
+
+
+
+*   A táblák létrehozása után, feltöltjük őket adattal az Insert Into paranccsal
 
 
 
