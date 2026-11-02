@@ -1,13 +1,14 @@
 # PC Webshop Adatbázis Tervezés - relációs adatbázis
 
 A munkát a tudásom megalapozásával kezdtem.
-Az abszolút kezdőknek mint én ajánlom, hogy olvassák el ezeket a cikkeket:
+Az abszolút kezdőknek, mint én, ajánlom, hogy olvassák el ezeket a cikkeket:
 
 [SQL alapok kezdőknek](https://webiskola.hu/sql-alapok-kezdoknek/ "SQL alapok kezdőknek")
 
 
 
 Az alapok elsajátítása után, egy olyan online elérhető felületet ,"játszóteret" kerestem, amit online, böngészőből tudok futtatni.
+
 Ezt választottam:
 
 [MySQL Online ](https://onecompiler.com/mysql "Online MySQL lekérdezés futtató")
@@ -15,14 +16,26 @@ Ezt választottam:
 
 ## A feladatunk lesz egy képzeletbeli informatikai webshop adatbázisának elkészítése.
 
+Elsőként az adatbázis elkészítését és használatát kérjük a rendszertől.
+
+Ezt az alábbi paranccsal teheted meg:
+
+létrehozzuk az adatbázis a CREATE paranccsal.
+
 ```bash
 CREATE DATABASE webshop_adatbazis;
 ```
+használjuk az adatbázist, hogy tudjunk benne dolgozni
+
 ```
 USE DATABASE WEBSHOP_ADATBAZIS;
 ```
 
-ezzel létrehoztuk és használatra bírtuk az adatbázist
+ezzel létrehoztuk és használatra bírtuk az adatbázist.
+
+* FONTOS - a Create Database és Use database a választott nem fog működni, mert ez egy előre korlátozott MySQL adatbázis szerkesztő
+
+
 
 Táblák elkészítése: 
 
