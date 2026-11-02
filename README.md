@@ -61,8 +61,20 @@ CREATE TABLE Customers (
 );
 ```
 
+
+SQL adattípusok
+Egy adatbázis-kezelő esetében az adattípusok határozzák meg azt, hogy egy oszlop milyen értéket vehet fel. Az SQL elvei szerint, egy oszlopnak (mezőnek) minden esetben meg kell határozni az adattípusát már a tábla létrehozásakor, ez mutatja meg, hogy az egyes oszlopokban milyen adatokat, értékeket lehet tárolni.
+
+A MySQL-ben három főkategóriába sorolhatóak az adattípusok:
+
+szöveg
+szám
+dátum és idő
+
+
 az adatbázisvan használt adattípusokról itt olvashatsz többet:
-LINK
+
+https://webiskola.hu/sql-ismeretek/adattipusok-mysql-ben/ 
 
 
 
