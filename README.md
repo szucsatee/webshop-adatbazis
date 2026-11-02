@@ -61,6 +61,8 @@ CREATE TABLE Customers (
 );
 ```
 
+az adatbázisvan használt adattípusokról itt olvashatsz többet:
+LINK
 
 
 
