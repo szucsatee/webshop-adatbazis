@@ -50,8 +50,6 @@ ezzel létrehoztuk és használatra bírtuk az adatbázist.
 *   **Orders:** A rendelések törzsadatai (Ki rendelte, hogyan fizetett, mivel kéri a kiszállítást).
 *   **Order_items:** A kosár tartalma (Melyik rendelésben milyen termékből mennyit vettek).
 
-<img width="483" height="164" alt="image" src="https://github.com/user-attachments/assets/4bc5aa5f-d20b-4d12-b05f-eaec4a42dc66" />
-
 
 ```
 -- Customers tábla létrehozása
