@@ -37,14 +37,15 @@ ezzel létrehoztuk és használatra bírtuk az adatbázist.
 
 
 
-Táblák elkészítése: 
+### Táblák elkészítése: 
 
 
 ### Adatbázis táblák listája:
 *   **Categories:** Termékkategóriák (Alaplapok, Processzorok, stb.)
-*   **Produts:** A webshopban elérhető alkatrészek és szoftverek árakkal.
+
 *   **Customers:** Regisztrált vásárlók adatai.
 *   **Payments & Shipping:** Elérhető fizetési és logisztikai módok.
+*   **Produts:** A webshopban elérhető alkatrészek és szoftverek árakkal.
 *   **Orders:** A rendelések törzsadatai (Ki rendelte, hogyan fizetett, hova kéri).
 *   **Order_items:** A kosár tartalma (Melyik rendelésben milyen termékből mennyit vettek).
 
