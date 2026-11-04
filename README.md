@@ -1,6 +1,6 @@
 # PC Webshop Adatbázis Tervezés - relációs adatbázis
 
-Egy egyszerűsített informatikai webáruház adatbázis-modellje, amely bemutatja az entitások közötti kapcsolatokat, idegen kulcsok (`FOREIGN KEY`) használatát és összetett statisztikai lekérdezéseket.
+Egy egyszerűsített informatikai webáruház adatbázis-modellje elkészítése a célom, mely bemutatja az entitások közötti kapcsolatokat, idegen kulcsok (`FOREIGN KEY`) használatát és statisztikai lekérdezéseket.
 
 
 
@@ -11,11 +11,12 @@ Az abszolút kezdőknek, mint én, ajánlom, hogy olvassák el ezeket a cikkeket
 
 
 
-Az alapok elsajátítása után, egy olyan online elérhető felületet ,"játszóteret" kerestem, amit online, böngészőből tudok futtatni.
+Az alapok elsajátítása után, egy olyan online elérhető felületet ,"játszóteret" kerestem, amit böngészőből tudok futtatni.
 
 Ezt választottam:
 
 [MySQL Online ](https://onecompiler.com/mysql "Online MySQL lekérdezés futtató")
+
 
 
 ## A feladatunk lesz egy képzeletbeli informatikai webshop adatbázisának elkészítése.
@@ -93,7 +94,7 @@ https://webiskola.hu/sql-ismeretek/adattipusok-mysql-ben/
 
 
 
-A táblák létrehozása után, feltöltjük őket adattal az **Insert Into** paranccsal
+A táblák létrehozása után, feltöltjük őket adattal az 'Insert Into' paranccsal.
 
 ## --------------------
 
