@@ -25,7 +25,7 @@ Elsőként az adatbázis elkészítését és használatát kérjük a rendszert
 
 Ezt az alábbi paranccsal tehetjük meg:
 
-létrehozzuk az adatbázis a CREATE paranccsal.
+létrehozzuk az adatbázis a `CREATE` paranccsal.
 
 ```bash
 CREATE DATABASE webshop_adatbazis;
@@ -94,7 +94,9 @@ https://webiskola.hu/sql-ismeretek/adattipusok-mysql-ben/
 
 
 
-A táblák létrehozása után, feltöltjük őket adattal az 'Insert Into' paranccsal.
+A táblák létrehozása után, feltöltjük őket adattal az `INSERT INTO` paranccsal.
+
+
 
 ## --------------------
 
