@@ -38,11 +38,10 @@ ezzel létrehoztuk és használatra bírtuk az adatbázist.
 
 
 ### Táblák elkészítése: 
-
+Az adatbázis logikailag úgy épül fel, hogy a megrendelések leadásához a törzsadatoknak (kategóriák, vásárlók, termékek, fizetési és szállítási módok) már létezniük kell a rendszerben.
 
 ### Adatbázis táblák listája:
 *   **Categories:** Termékkategóriák (Alaplapok, Processzorok, stb.)
-
 *   **Customers:** Regisztrált vásárlók adatai.
 *   **Payments** Elérhető fizetési módok
 *   Shipping:** Elérhető szállítási módok.
@@ -68,59 +67,19 @@ Egy adatbázis-kezelő esetében az adattípusok határozzák meg azt, hogy egy 
 A MySQL-ben három főkategóriába sorolhatóak az adattípusok:
 
 szöveg
-szám
-dátum és idő
+* szám
+* dátum
+* idő
 
-
-az adatbázisvan használt adattípusokról itt olvashatsz többet:
+az adatbázisban használt adattípusokról itt olvashatsz többet:
 
 https://webiskola.hu/sql-ismeretek/adattipusok-mysql-ben/ 
 
 
 
+A táblák létrehozása után, feltöltjük őket adattal az **Insert Into** paranccsal
 
-*   A táblák létrehozása után, feltöltjük őket adattal az Insert Into paranccsal
-
-
-
-
-
-
-
-
-## -----------------------
-
-kezdő vagyok, csak ismerkedem ......
-
-mi is ez?
-röviden pár szót erről 
-
-database létrehozás
-használat -- use
-adattabla letrehozas
-lekerdezes
-
-azure mysql
-
-epitsunk fel egy webshop adatbazist...legyen ez egy informatikai webaruhaz webshopja
-adattáblákat kell csinálni
-
-tervezzunk adatbazist
-create database, create table
-
-nem tudok hol játszani vele, hogy ne generáljon költséget
-találtam online mySQL playgroundot, én ezt használtam: 
-
-https://onecompiler.com/mysql 
-
-letöltöm a mysql servert a saját gépemre innen:
-https://dev.mysql.com/downloads/
-telepítés
-
-DBeaver
-
-
-## ---------------
+## --------------------
 
 Egy egyszerűsített informatikai webáruház adatbázis-modellje, amely bemutatja az entitások közötti kapcsolatokat, idegen kulcsok (`FOREIGN KEY`) használatát és összetett statisztikai lekérdezéseket.
 
@@ -136,23 +95,10 @@ Rengetegszer hibáztam, míg felépült az adatbázis.
 
 ---
 
-## 🛠 Adatbázis Struktúra & Kapcsolatok
+## Adatbázis Struktúra & Kapcsolatok
 
 Az adatbázis logikailag úgy épül fel, hogy a megrendelések leadásához a törzsadatoknak (vásárlók, termékek, fizetési és szállítási módok) már létezniük kell a rendszerben.
 
-Hogyan csináltam táblákat
-create datebase
-create table
-
-1-2 képet bevág, bash-el megmutat
-
-### Adatbázis táblák listája:
-*   **Categories:** Termékkategóriák (Alaplapok, Processzorok, stb.)
-*   **Produts:** A webshopban elérhető alkatrészek és szoftverek árakkal.
-*   **Customers:** Regisztrált vásárlók adatai.
-*   **Payments & Shipping:** Elérhető fizetési és logisztikai módok.
-*   **Orders:** A rendelések törzsadatai (Ki rendelte, hogyan fizetett, hova kéri).
-*   **Order_items:** A kosár tartalma (Melyik rendelésben milyen termékből mennyit vettek).
 
 ---
 
