@@ -96,6 +96,29 @@ https://webiskola.hu/sql-ismeretek/adattipusok-mysql-ben/
 
 A táblák létrehozása után, feltöltjük őket adattal az `INSERT INTO` paranccsal.
 
+` `
+` Customers ` tábla adatainak feltöltése:
+
+```
+-- adatok felvitele Customers táblába (bővített lista)
+INSERT INTO Customers (name, email, phone_number) VALUES 
+('Nagy Szabina', 'szabina.nagy@email.com', '+36 30 987 6543'), -- 1
+('Kiss Péter', 'peter.kiss@email.com', '+36701112223'), -- 2
+('Tóth Gábor', 'gabor.toth@email.com', NULL), -- 3
+('Kovács Dániel', 'daniel.kovacs@email.com', '+36203334444'), -- 4
+('Molnár Anikó', 'aniko.molnar@email.com', '+36305556666'), -- 5
+('Horváth Balázs', 'balazs.horvath@email.com', NULL), -- 6 
+('Szabó Eszter', 'eszter.szabo@email.com', '+36707778888'), -- 7
+('Farkas Bence', 'bence.farkas@email.com', '+36209991111'), -- 8
+('Németh Dorina', 'dora.nemeth@email.com', '+36302223333'), -- 9
+('Varga Tamás', 'tamas.varga@email.com', NULL), -- 10
+('Takács Kinga', 'kinga.takacs@email.com', '+36704445555'), -- 11
+('Juhász Attila', 'attila.juhasz@email.com', '+36206667777'), -- 12
+('Papp Zsófia', 'zsofia.papp@email.com', '+36308889999'), -- 13
+('Mizse Dóra', 'dora.mizse@email.com', '+36 20 519 7532'); -- 14
+```
+
+
 
 
 ## --------------------
