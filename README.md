@@ -97,25 +97,6 @@ A táblák létrehozása után, feltöltjük őket adattal az **Insert Into** pa
 
 ## --------------------
 
-Egy egyszerűsített informatikai webáruház adatbázis-modellje, amely bemutatja az entitások közötti kapcsolatokat, idegen kulcsok (`FOREIGN KEY`) használatát és összetett statisztikai lekérdezéseket.
-
-
-Nem volt tudásom, miből tanultam ???
-LINKet beszúr
-
-NEm akartam telepíteni előzőleg semmit, ezt használtam:
-mind2 linket, vagy csak az egyiket
-
-Rengetegszer hibáztam, míg felépült az adatbázis.
-
-
----
-
-## Adatbázis Struktúra & Kapcsolatok
-
-Az adatbázis logikailag úgy épül fel, hogy a megrendelések leadásához a törzsadatoknak (vásárlók, termékek, fizetési és szállítási módok) már létezniük kell a rendszerben.
-
-
 ---
 
 ## 📊 Hasznos SQL Lekérdezések (Riportok)
