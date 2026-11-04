@@ -1,5 +1,9 @@
 # PC Webshop Adatbázis Tervezés - relációs adatbázis
 
+Egy egyszerűsített informatikai webáruház adatbázis-modellje, amely bemutatja az entitások közötti kapcsolatokat, idegen kulcsok (`FOREIGN KEY`) használatát és összetett statisztikai lekérdezéseket.
+
+
+
 A munkát a tudásom megalapozásával kezdtem.
 Az abszolút kezdőknek, mint én, ajánlom, hogy olvassák el ezeket a cikkeket:
 
