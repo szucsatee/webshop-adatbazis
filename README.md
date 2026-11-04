@@ -22,14 +22,14 @@ Ezt választottam:
 
 Elsőként az adatbázis elkészítését és használatát kérjük a rendszertől.
 
-Ezt az alábbi paranccsal teheted meg:
+Ezt az alábbi paranccsal tehetjük meg:
 
 létrehozzuk az adatbázis a CREATE paranccsal.
 
 ```bash
 CREATE DATABASE webshop_adatbazis;
 ```
-használjuk az adatbázist, hogy tudjunk benne dolgozni
+az elkészített adatbázist így használjuk, hogy tudjunk benne dolgozni.
 
 ```
 USE DATABASE WEBSHOP_ADATBAZIS;
@@ -43,7 +43,8 @@ ezzel létrehoztuk és használatra bírtuk az adatbázist.
 
 ### Táblák elkészítése: 
 Az adatbázis logikailag úgy épül fel, hogy a megrendelések leadásához a törzsadatoknak (kategóriák, vásárlók, termékek, fizetési és szállítási módok) már létezniük kell a rendszerben.
-
+* a való életben előbb dobáljuk a kosárba a termékeket, csak aztán adjuk meg az adatainkat, a fizetési módot, kiszállítási módot. Ám a felépített rendszer áll mögötte. Próbáltam más módon is elkészíteni, de nem működött.
+  
 ### Adatbázis táblák listája:
 *   **Categories:** Termékkategóriák (Alaplapok, Processzorok, stb.)
 *   **Customers:** Regisztrált vásárlók adatai.
@@ -63,6 +64,17 @@ CREATE TABLE Customers (
     phone_number VARCHAR(50)
 );
 ```
+vagy a Shipping tábla
+
+```
+-- Shipping tábla létrehozása
+CREATE TABLE Shipping(
+  shipping_id INT AUTO_INCREMENT PRIMARY KEY,
+  shipping_method VARCHAR(30) NOT NULL
+);
+
+```
+
 
 
 SQL adattípusok
