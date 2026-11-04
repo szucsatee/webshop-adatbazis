@@ -118,6 +118,18 @@ INSERT INTO Customers (name, email, phone_number) VALUES
 ('Mizse Dóra', 'dora.mizse@email.com', '+36 20 519 7532'); -- 14
 ```
 
+vagy a ` szállítási módok` tábla:
+
+```
+-- adatok felvitele Shipping táblába
+INSERT INTO Shipping (shipping_method)VALUES
+('Személyes átvétel'), -- 1
+('MPL házhozszállítás'), -- 2
+('GLS házhozszállítás'), -- 3
+('DPD házhozszállítás'), -- 4 
+('DHL házhozszállítás');-- 5
+
+```
 
 
 
