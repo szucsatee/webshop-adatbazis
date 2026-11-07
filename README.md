@@ -54,6 +54,21 @@ Az adatbázis logikailag úgy épül fel, hogy a megrendelések leadásához a t
 *   **Produts:** A webshopban elérhető alkatrészek és szoftverek árakkal. ( itt a Foreign key használata )
 *   **Orders:** A rendelések törzsadatai (Ki rendelte, hogyan fizetett, mivel kéri a kiszállítást).
 *   **Order_items:** A kosár tartalma (Melyik rendelésben milyen termékből mennyit vettek).
+*   
+
+SQL adattípusok
+Egy adatbázis-kezelő esetében az adattípusok határozzák meg azt, hogy egy oszlop milyen értéket vehet fel. Az SQL elvei szerint, egy oszlopnak (mezőnek) minden esetben meg kell határozni az adattípusát már a tábla létrehozásakor, ez mutatja meg, hogy az egyes oszlopokban milyen adatokat, értékeket lehet tárolni.
+
+A MySQL-ben három főkategóriába sorolhatóak az adattípusok:
+
+szöveg
+* szám
+* dátum
+* idő
+
+az adatbázisban használt adattípusokról itt olvashatsz többet:
+
+https://webiskola.hu/sql-ismeretek/adattipusok-mysql-ben/ 
 
 
 ```
@@ -112,19 +127,7 @@ CREATE TABLE Produts2(
 
 
 
-SQL adattípusok
-Egy adatbázis-kezelő esetében az adattípusok határozzák meg azt, hogy egy oszlop milyen értéket vehet fel. Az SQL elvei szerint, egy oszlopnak (mezőnek) minden esetben meg kell határozni az adattípusát már a tábla létrehozásakor, ez mutatja meg, hogy az egyes oszlopokban milyen adatokat, értékeket lehet tárolni.
 
-A MySQL-ben három főkategóriába sorolhatóak az adattípusok:
-
-szöveg
-* szám
-* dátum
-* idő
-
-az adatbázisban használt adattípusokról itt olvashatsz többet:
-
-https://webiskola.hu/sql-ismeretek/adattipusok-mysql-ben/ 
 
 
 
