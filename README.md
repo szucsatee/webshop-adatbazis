@@ -44,6 +44,9 @@ ezzel létrehoztuk és használatra bírtuk az adatbázist.
 
 
 
+
+
+
 ### Táblák elkészítése: 
 
 Az adatbázis logikailag úgy épül fel, hogy a megrendelések leadásához a törzsadatoknak (kategóriák, vásárlók, termékek, fizetési és szállítási módok) már létezniük kell a rendszerben.
