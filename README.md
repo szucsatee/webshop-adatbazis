@@ -215,37 +215,8 @@ INSERT INTO Produts2 (product_name, category_id, price) VALUES
 
 
 
-A táblák létrehozása után, feltöltjük őket adattal az `INSERT INTO` paranccsal.
 
-` `
-
-
-```
-valami
-```
-
-
-
-## Most j00ön egy bonyolulu a products stb...
-
-
-A Webshop adatbázist elkészítettük, most SELECT paranccsal kilistázz
-uk amit eddig elkészítettünk.
-
-1-2 select parancs
-
-Generáljunk néhány rendelét...
-create
-insert into
-select
-
-woow de jóó lesz :D 
-
-## --------------------
-
----
-
-## 📊 Hasznos SQL Lekérdezések (Riportok)
+## Hasznos SQL Lekérdezések (Riportok)
 
 ### 1. Részletes Megrendelés Lista (Minden adat összekapcsolva)
 Ez a lekérdezés emberi fogyasztásra alkalmas formában listázza ki az összes beérkezett rendelést.
