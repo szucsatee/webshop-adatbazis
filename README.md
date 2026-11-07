@@ -1,6 +1,6 @@
 # PC Webshop Adatbázis Tervezés - relációs adatbázis
 
-Egy egyszerűsített informatikai webáruház adatbázis-modellje elkészítése a célom, mely bemutatja az entitások közötti kapcsolatokat, idegen kulcsok (`FOREIGN KEY`) használatát és statisztikai lekérdezéseket.
+Egy egyszerűsített informatikai webáruház adatbázis-modellje elkészítése a célom, mely bemutatja az entitások közötti kapcsolatokat, és statisztikai lekérdezéseket.
 
 
 
@@ -21,7 +21,7 @@ Ezt választottam:
 
 ## A feladatunk lesz egy képzeletbeli informatikai webshop adatbázisának elkészítése.
 
-A feladatban a ` CREATE ` , za ` INSERT INTO ` , a ` FOREIGN KEY `, valamint a ` JOIN ` paranccsal ismerkedünk meg.
+A feladatban a ` CREATE ` , za ` INSERT INTO ` , a ` FOREIGN KEY `, valamint a ` JOIN ` és a ` LEFT JOIN ` paranccsal ismerkedünk meg.
 
 Elsőként az adatbázis létrehozását és használatát kérjük a rendszertől.
 
