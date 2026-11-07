@@ -148,7 +148,7 @@ INSERT INTO Shipping (shipping_method)VALUES
 egy FOREIGN kEY-s tábla létrehozása ` Categories2 `
 ```
 -- NR 1b. #####################################
--- tábla létrehozása Categories2 -- Foreign Key-jel
+-- tábla létrehozása Categories2
 CREATE TABLE Categories2 (
 category_id INT AUTO_INCREMENT PRIMARY KEY,
 category_name VARCHAR(20) NOT NULL
@@ -179,6 +179,7 @@ CREATE TABLE Produts2(
   price        DECIMAL(10,2) NOT NULL,
   FOREIGN KEY (category_id) REFERENCES Categories2(category_id)
 );
+
 ```
 
 ```
