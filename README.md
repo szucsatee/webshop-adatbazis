@@ -21,13 +21,15 @@ Ezt választottam:
 
 ## A feladatunk lesz egy képzeletbeli informatikai webshop adatbázisának elkészítése.
 
-Elsőként az adatbázis elkészítését és használatát kérjük a rendszertől.
+A feladatban a ` CREATE ` , za ` INSERT INTO ` , a ` FOREIGN KEY `, valamint a ` JOIN ` paranccsal ismerkedünk meg.
+
+Elsőként az adatbázis létrehozását és használatát kérjük a rendszertől.
 
 Ezt az alábbi paranccsal tehetjük meg:
 
 létrehozzuk az adatbázis a `CREATE` paranccsal.
 
-```bash
+```
 CREATE DATABASE webshop_adatbazis;
 ```
 az elkészített adatbázist így használjuk, hogy tudjunk benne dolgozni.
