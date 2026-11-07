@@ -199,7 +199,12 @@ uk amit eddig elkészítettünk.
 
 1-2 select parancs
 
+Generáljunk néhány rendelét...
+create
+insert into
+select
 
+woow de jóó lesz :D 
 
 ## --------------------
 
