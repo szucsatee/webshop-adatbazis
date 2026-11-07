@@ -68,7 +68,8 @@ szöveg
 
 az adatbázisban használt adattípusokról itt olvashatsz többet:
 
-https://webiskola.hu/sql-ismeretek/adattipusok-mysql-ben/ 
+
+[Adattípusok a mySQL-ben ](https://webiskola.hu/sql-ismeretek/adattipusok-mysql-ben/ )
 
 
 ```
