@@ -72,6 +72,9 @@ az adatbázisban használt adattípusokról itt olvashatsz többet:
 [Adattípusok a mySQL-ben ](https://webiskola.hu/sql-ismeretek/adattipusok-mysql-ben/ )
 
 
+### Táblák létrehozása:
+
+
 A ` Customers ` tábla létrehozása:
 
 ```
@@ -83,7 +86,7 @@ CREATE TABLE Customers (
     phone_number VARCHAR(50)
 );
 ```
-vagy a ` Shipping ` tábla
+a ` Shipping ` tábla létrehozása
 
 ```
 -- Shipping tábla létrehozása
@@ -94,7 +97,7 @@ CREATE TABLE Shipping(
 
 ```
 
-esetleg egy FOREIGN kEY-s tábla
+egy FOREIGN kEY-s tábla létrehozása ` Categories2 `
 ```
 -- NR 1b. #####################################
 -- tábla létrehozása Categories2 -- Foreign Key-jel
@@ -103,20 +106,7 @@ category_id INT AUTO_INCREMENT PRIMARY KEY,
 category_name VARCHAR(20) NOT NULL
 );
 
--- adatok felvitele Categories2
-INSERT INTO Categories2 (category_name) VALUES
-('Alaplapok'), -- 1
-('Processzorok'),  -- 2
-('Memóriák'),  -- 3
-('Videokártyák'),  -- 4
-('Tápegységek'),  -- 5
-('Háttértárak'),  -- 6
-('Szoftverek');  -- 7 
 
--- category_name listázása
-SELECT category_name FROM Categories2;
-
--- ===============================
 
 -- tábla létrehozása Products2 (Foreign Key-el összekötve
 CREATE TABLE Produts2(
@@ -170,6 +160,27 @@ INSERT INTO Shipping (shipping_method)VALUES
 ('DHL házhozszállítás');-- 5
 
 ```
+
+
+```
+-- adatok felvitele Categories2
+INSERT INTO Categories2 (category_name) VALUES
+('Alaplapok'), -- 1
+('Processzorok'),  -- 2
+('Memóriák'),  -- 3
+('Videokártyák'),  -- 4
+('Tápegységek'),  -- 5
+('Háttértárak'),  -- 6
+('Szoftverek');  -- 7 
+
+```
+
+
+```
+valami
+```
+
+
 
 ## Most j00ön egy bonyolulu a products stb...
 
