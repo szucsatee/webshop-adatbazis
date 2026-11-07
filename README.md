@@ -72,6 +72,8 @@ az adatbázisban használt adattípusokról itt olvashatsz többet:
 [Adattípusok a mySQL-ben ](https://webiskola.hu/sql-ismeretek/adattipusok-mysql-ben/ )
 
 
+A ` Customers ` tábla létrehozása:
+
 ```
 -- Customers tábla létrehozása
 CREATE TABLE Customers (
@@ -81,7 +83,7 @@ CREATE TABLE Customers (
     phone_number VARCHAR(50)
 );
 ```
-vagy a Shipping tábla
+vagy a ` Shipping ` tábla
 
 ```
 -- Shipping tábla létrehozása
