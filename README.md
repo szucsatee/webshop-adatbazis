@@ -47,7 +47,7 @@ ezzel létrehoztuk és használatra bírtuk az adatbázist.
 
 
 
-### <ins>Táblák elkészítése:<ins> 
+### **Táblák elkészítése:**
 
 Az adatbázis logikailag úgy épül fel, hogy a megrendelések leadásához a törzsadatoknak (kategóriák, vásárlók, termékek, fizetési és szállítási módok) már létezniük kell a rendszerben.
 * a való életben előbb dobáljuk a kosárba a termékeket, csak aztán adjuk meg az adatainkat, a fizetési módot, kiszállítási módot. Ám a felépített rendszer áll mögötte. Próbáltam más módon is elkészíteni, de nem működött.
@@ -80,7 +80,7 @@ az adatbázisban használt adattípusokról itt olvashatsz többet:
 [Adattípusok a mySQL-ben ](https://webiskola.hu/sql-ismeretek/adattipusok-mysql-ben/ )
 
 
-### Táblák létrehozása:
+###  <ins> Táblák létrehozása: <ins>
 
 
 A ` Customers ` tábla létrehozása:
