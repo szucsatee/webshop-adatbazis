@@ -32,7 +32,8 @@ létrehozzuk az adatbázis a `CREATE` paranccsal.
 ```
 CREATE DATABASE webshop_adatbazis;
 ```
-az elkészített adatbázist így használjuk, hogy tudjunk benne dolgozni.
+
+az elkészített adatbázist A ` USE` paranccsal használjuk, hogy tudjunk benne dolgozni.
 
 ```
 USE DATABASE WEBSHOP_ADATBAZIS;
