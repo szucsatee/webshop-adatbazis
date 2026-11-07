@@ -40,7 +40,7 @@ USE DATABASE WEBSHOP_ADATBAZIS;
 
 ezzel létrehoztuk és használatra bírtuk az adatbázist.
 
-* FONTOS - a `CREATE DATABASE ` és `USE DATABASE` paranc a választott online szerkesztőben nem fog működni, mert ez egy előre korlátozott MySQL adatbázis szerkesztő.
+* FONTOS - a `CREATE DATABASE ` és `USE DATABASE` paranc a választott online szerkesztőben nem fog működni, mert ez egy előre korlátozott MySQL adatbázis.
 
 
 
