@@ -40,13 +40,16 @@ USE DATABASE WEBSHOP_ADATBAZIS;
 
 ezzel létrehoztuk és használatra bírtuk az adatbázist.
 
-* FONTOS - a Create Database és Use database a választott nem fog működni, mert ez egy előre korlátozott MySQL adatbázis szerkesztő
+* FONTOS - a `CREATE DATABASE ` és `USE DATABASE` paranc a választott online szerkesztőben nem fog működni, mert ez egy előre korlátozott MySQL adatbázis szerkesztő.
 
 
 
 ### Táblák elkészítése: 
+
 Az adatbázis logikailag úgy épül fel, hogy a megrendelések leadásához a törzsadatoknak (kategóriák, vásárlók, termékek, fizetési és szállítási módok) már létezniük kell a rendszerben.
 * a való életben előbb dobáljuk a kosárba a termékeket, csak aztán adjuk meg az adatainkat, a fizetési módot, kiszállítási módot. Ám a felépített rendszer áll mögötte. Próbáltam más módon is elkészíteni, de nem működött.
+
+Először a törzsadatokat fogjk elkészíteni.
   
 ### Adatbázis táblák listája:
 *   **Categories:** Termékkategóriák (Alaplapok, Processzorok, stb.)
@@ -88,6 +91,32 @@ CREATE TABLE Customers (
     phone_number VARCHAR(50)
 );
 ```
+insert into-val feltöltjük a táblát
+
+` Customers ` tábla adatainak feltöltése:
+
+```
+-- adatok felvitele Customers táblába (bővített lista)
+INSERT INTO Customers (name, email, phone_number) VALUES 
+('Nagy Szabina', 'szabina.nagy@email.com', '+36 30 987 6543'), -- 1
+('Kiss Péter', 'peter.kiss@email.com', '+36701112223'), -- 2
+('Tóth Gábor', 'gabor.toth@email.com', NULL), -- 3
+('Kovács Dániel', 'daniel.kovacs@email.com', '+36203334444'), -- 4
+('Molnár Anikó', 'aniko.molnar@email.com', '+36305556666'), -- 5
+('Horváth Balázs', 'balazs.horvath@email.com', NULL), -- 6 
+('Szabó Eszter', 'eszter.szabo@email.com', '+36707778888'), -- 7
+('Farkas Bence', 'bence.farkas@email.com', '+36209991111'), -- 8
+('Németh Dorina', 'dora.nemeth@email.com', '+36302223333'), -- 9
+('Varga Tamás', 'tamas.varga@email.com', NULL), -- 10
+('Takács Kinga', 'kinga.takacs@email.com', '+36704445555'), -- 11
+('Juhász Attila', 'attila.juhasz@email.com', '+36206667777'), -- 12
+('Papp Zsófia', 'zsofia.papp@email.com', '+36308889999'), -- 13
+('Mizse Dóra', 'dora.mizse@email.com', '+36 20 519 7532'); -- 14
+```
+
+
+
+
 a ` Shipping ` tábla létrehozása
 
 ```
@@ -129,26 +158,6 @@ CREATE TABLE Produts2(
 A táblák létrehozása után, feltöltjük őket adattal az `INSERT INTO` paranccsal.
 
 ` `
-` Customers ` tábla adatainak feltöltése:
-
-```
--- adatok felvitele Customers táblába (bővített lista)
-INSERT INTO Customers (name, email, phone_number) VALUES 
-('Nagy Szabina', 'szabina.nagy@email.com', '+36 30 987 6543'), -- 1
-('Kiss Péter', 'peter.kiss@email.com', '+36701112223'), -- 2
-('Tóth Gábor', 'gabor.toth@email.com', NULL), -- 3
-('Kovács Dániel', 'daniel.kovacs@email.com', '+36203334444'), -- 4
-('Molnár Anikó', 'aniko.molnar@email.com', '+36305556666'), -- 5
-('Horváth Balázs', 'balazs.horvath@email.com', NULL), -- 6 
-('Szabó Eszter', 'eszter.szabo@email.com', '+36707778888'), -- 7
-('Farkas Bence', 'bence.farkas@email.com', '+36209991111'), -- 8
-('Németh Dorina', 'dora.nemeth@email.com', '+36302223333'), -- 9
-('Varga Tamás', 'tamas.varga@email.com', NULL), -- 10
-('Takács Kinga', 'kinga.takacs@email.com', '+36704445555'), -- 11
-('Juhász Attila', 'attila.juhasz@email.com', '+36206667777'), -- 12
-('Papp Zsófia', 'zsofia.papp@email.com', '+36308889999'), -- 13
-('Mizse Dóra', 'dora.mizse@email.com', '+36 20 519 7532'); -- 14
-```
 
 vagy a ` szállítási módok` tábla:
 
