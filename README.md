@@ -270,17 +270,3 @@ WHERE Orders.order_id IS NULL;
 
 ---
 
-## 💡 Tibi válaszol: Miért így épül fel a Rendelési Rendszer?
-
-**A kérdésed:** *„A való életben először teszem be a kosárba a terméket, aztán adom meg a szükséges adatokat. Miért a kódban fordítva működik?”*
-
-**A logikai magyarázat:**
-A weboldalon (frontend) a látogató valóban a kosárral kezd, de a **háttértároló adatbázisban (backend)** a relációs szabályok (Referential Integrity) miatt ezt meg kell fordítani:
-1.  A **Kosár (Order_items)** egy összekötő tábla. Nem létezhet benne olyan tétel, ami nem tartozik egy valós rendelés fejléchez (`order_id`).
-2.  A **Rendelés (Orders)** fejléc pedig nem létezhet anélkül, hogy ne tudnánk, ki a vásárló (`customer_id`).
-3.  **A folyamat a háttérben valójában így fut le a fizetés gomb megnyomásakor:**
-    *   A rendszer elmenti a vásárlót a `Customers` táblába (ha új vendég).
-    *   Létrehoz egy üres számlát/rendelés fejlécet az `Orders` táblában a kiválasztott szállítási és fizetési móddal.
-    *   Végül ebbe a frissen generált `order_id`-ba önti bele a kosár elemeit az `Order_items` táblába.
-
-Így biztosítja az SQL, hogy ne lehessen "szellem" termékeket rendelni olyan kosarakban, amik nem tartoznak senkihez! 🚀
