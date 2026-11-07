@@ -131,39 +131,6 @@ CREATE TABLE Shipping(
 
 ```
 
-egy FOREIGN kEY-s tábla létrehozása ` Categories2 `
-```
--- NR 1b. #####################################
--- tábla létrehozása Categories2 -- Foreign Key-jel
-CREATE TABLE Categories2 (
-category_id INT AUTO_INCREMENT PRIMARY KEY,
-category_name VARCHAR(20) NOT NULL
-);
-
-
-
--- tábla létrehozása Products2 (Foreign Key-el összekötve
-CREATE TABLE Produts2(
-  products_id INT AUTO_INCREMENT PRIMARY KEY,
-  product_name VARCHAR (50) NOT NULL,
-  category_id  INT NOT NULL,
-  price        DECIMAL(10,2) NOT NULL,
-  FOREIGN KEY (category_id) REFERENCES Categories2(category_id)
-);
-```
-
-
-
-
-
-
-
-A táblák létrehozása után, feltöltjük őket adattal az `INSERT INTO` paranccsal.
-
-` `
-
-vagy a ` szállítási módok` tábla:
-
 ```
 -- adatok felvitele Shipping táblába
 INSERT INTO Shipping (shipping_method)VALUES
@@ -175,6 +142,19 @@ INSERT INTO Shipping (shipping_method)VALUES
 
 ```
 
+
+
+
+egy FOREIGN kEY-s tábla létrehozása ` Categories2 `
+```
+-- NR 1b. #####################################
+-- tábla létrehozása Categories2 -- Foreign Key-jel
+CREATE TABLE Categories2 (
+category_id INT AUTO_INCREMENT PRIMARY KEY,
+category_name VARCHAR(20) NOT NULL
+);
+
+```
 
 ```
 -- adatok felvitele Categories2
@@ -189,14 +169,17 @@ INSERT INTO Categories2 (category_name) VALUES
 
 ```
 
-
-```
-valami
 ```
 
-
-
-## Most j00ön egy bonyolulu a products stb...
+-- tábla létrehozása Products2 (Foreign Key-el összekötve
+CREATE TABLE Produts2(
+  products_id INT AUTO_INCREMENT PRIMARY KEY,
+  product_name VARCHAR (50) NOT NULL,
+  category_id  INT NOT NULL,
+  price        DECIMAL(10,2) NOT NULL,
+  FOREIGN KEY (category_id) REFERENCES Categories2(category_id)
+);
+```
 
 ```
 -- adatok felvitele Products2 (a szöveges kategóriák helyett a Categories2 táblát össekötjük
@@ -224,6 +207,26 @@ INSERT INTO Produts2 (product_name, category_id, price) VALUES
 ('Gamer Szoftvercsomag ', 7, 74990.00); -- 21
 
 ```
+
+
+
+--------------------------------------------------
+
+
+
+A táblák létrehozása után, feltöltjük őket adattal az `INSERT INTO` paranccsal.
+
+` `
+
+
+```
+valami
+```
+
+
+
+## Most j00ön egy bonyolulu a products stb...
+
 
 A Webshop adatbázist elkészítettük, most SELECT paranccsal kilistázz
 uk amit eddig elkészítettünk.
