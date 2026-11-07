@@ -76,6 +76,40 @@ CREATE TABLE Shipping(
 
 ```
 
+esetleg egy FOREIGN kEY-s tábla
+```
+-- NR 1b. #####################################
+-- tábla létrehozása Categories2 -- Foreign Key-jel
+CREATE TABLE Categories2 (
+category_id INT AUTO_INCREMENT PRIMARY KEY,
+category_name VARCHAR(20) NOT NULL
+);
+
+-- adatok felvitele Categories2
+INSERT INTO Categories2 (category_name) VALUES
+('Alaplapok'), -- 1
+('Processzorok'),  -- 2
+('Memóriák'),  -- 3
+('Videokártyák'),  -- 4
+('Tápegységek'),  -- 5
+('Háttértárak'),  -- 6
+('Szoftverek');  -- 7 
+
+-- category_name listázása
+SELECT category_name FROM Categories2;
+
+-- ===============================
+
+-- tábla létrehozása Products2 (Foreign Key-el összekötve
+CREATE TABLE Produts2(
+  products_id INT AUTO_INCREMENT PRIMARY KEY,
+  product_name VARCHAR (50) NOT NULL,
+  category_id  INT NOT NULL,
+  price        DECIMAL(10,2) NOT NULL,
+  FOREIGN KEY (category_id) REFERENCES Categories2(category_id)
+);
+```
+
 
 
 SQL adattípusok
@@ -132,6 +166,39 @@ INSERT INTO Shipping (shipping_method)VALUES
 ```
 
 ## Most j00ön egy bonyolulu a products stb...
+
+```
+-- adatok felvitele Products2 (a szöveges kategóriák helyett a Categories2 táblát össekötjük
+INSERT INTO Produts2 (product_name, category_id, price) VALUES
+('Normál alaplap', 1, 29990.00), -- 1
+('Irodai alaplap', 1, 39990.00), -- 2
+('Gamer alaplap', 1, 49990.00), -- 3
+('Normál HDD', 6, 15990.00), -- 4
+('Irodai SSD', 6, 19990.00), -- 5
+('Gamer SSD', 6, 35990.00), -- 6 
+('Normál Processzor', 2, 25990.00), -- 7
+('Irodai Processzor', 2, 35990.00), -- 8
+('Gamer Processzor', 2, 45990.00), -- 9
+('Normál Memória ', 3, 15990.00), -- 10
+('Irodai Memória ', 3, 25990.00), -- 11
+('Gamer Memória ', 3, 35990.00), -- 12
+('Normál Videokártya ', 4, 14990.00), -- 13
+('Irodai Videokártya ', 4, 24990.00), -- 14 
+('Gamer Videokártya ', 4, 34990.00), -- 15
+('Normál Tápegység ', 5, 14990.00), -- 16
+('Irodai Tápegység ', 5, 19990.00),  -- 17
+('Gamer Tápegység ', 5, 29990.00), -- 18
+('Normál Szoftvercsomag ', 7, 24990.00), -- 19
+('Irodai Szoftvercsomag ', 7, 44990.00), -- 20
+('Gamer Szoftvercsomag ', 7, 74990.00); -- 21
+
+```
+
+A Webshop adatbázist elkészítettük, most SELECT paranccsal kilistázz
+uk amit eddig elkészítettünk.
+
+1-2 select parancs
+
 
 
 ## --------------------
