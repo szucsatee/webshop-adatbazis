@@ -35,7 +35,7 @@ CREATE DATABASE webshop_adatbazis;
 
 az elkészített adatbázist A ` USE` paranccsal használjuk, hogy tudjunk benne dolgozni.
 
-```
+```sql
 USE DATABASE WEBSHOP_ADATBAZIS;
 ```
 
@@ -86,7 +86,7 @@ az adatbázisban használt adattípusokról itt olvashatsz többet:
 
 A ` Customers ` tábla létrehozása:
 
-```
+```sql
 -- Customers tábla létrehozása
 CREATE TABLE Customers (
     customer_id INT AUTO_INCREMENT PRIMARY KEY,
