@@ -309,7 +309,7 @@ GROUP BY Produts.category
 ORDER BY SUM(Produts.price * Order_items.quantity) DESC;
 ```
 
-### 4. Passzív vásárlók keresése (Akik még sosem rendeltek)
+### 4. Passzív vásárlók keresése (Akik még sohssem rendeltek)
 ```sql
 SELECT Customers.name, Customers.email FROM Customers
 LEFT JOIN Orders ON Customers.customer_id = Orders.customer_id
