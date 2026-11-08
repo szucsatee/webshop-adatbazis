@@ -239,6 +239,7 @@ ORDER BY Orders.order_id;                                          -- növekvőb
 
 
 ```sql
+
 -- összes megrendelés listázása "elnevezve" mint...
 -- ugyanaz a lekérdezés, csak elnevezve
 SELECT 
@@ -250,7 +251,7 @@ SELECT
     (Produts.price * Order_items.quantity) AS 'Részösszeg (Ft)', 
     Payments.payment_method AS 'Fizetési mód',
     Shipping.shipping_method AS 'Szállítási mód'
-FROM Orders
+FROM Orders                                                   -- összekötjük a JOIN paranccsal mint feljebb, de már AS paranccsal elnevezve
 JOIN Customers ON Orders.customer_id = Customers.customer_id
 JOIN Order_items ON Orders.order_id = Order_items.order_id
 JOIN Produts ON Order_items.products_id = Produts.products_id
@@ -259,8 +260,10 @@ JOIN Shipping ON Orders.shipping_id = Shipping.shipping_id
 ORDER BY Orders.order_id;
 ```
 
-### 2. Webáruház Összesített Bevétele
+### 2. Webáruház teljes bevétele:
+
 ```sql
+-- szintén az AS és a JOIN parancsokat használva
 SELECT 
     SUM(Order_items.quantity) AS 'Webáruház összes eladott termék (db)',
     SUM(Produts.price * Order_items.quantity) AS 'WEBÁRUHÁZ MINDÖSSZESÍTETT BEVÉTELE (Ft)'
