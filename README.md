@@ -99,7 +99,7 @@ insert into-val feltöltjük a táblát
 
 ` Customers ` tábla adatainak feltöltése:
 
-```
+```sql
 -- adatok felvitele Customers táblába (bővített lista)
 INSERT INTO Customers (name, email, phone_number) VALUES 
 ('Nagy Szabina', 'szabina.nagy@email.com', '+36 30 987 6543'), -- 1
@@ -123,7 +123,7 @@ INSERT INTO Customers (name, email, phone_number) VALUES
 
 a ` Shipping ` tábla létrehozása
 
-```
+```sql
 -- Shipping tábla létrehozása
 CREATE TABLE Shipping(
   shipping_id INT AUTO_INCREMENT PRIMARY KEY,
@@ -132,7 +132,7 @@ CREATE TABLE Shipping(
 
 ```
 
-```
+```sql
 -- adatok felvitele Shipping táblába
 INSERT INTO Shipping (shipping_method)VALUES
 ('Személyes átvétel'), -- 1
@@ -147,7 +147,7 @@ INSERT INTO Shipping (shipping_method)VALUES
 
 
 egy FOREIGN kEY-s tábla létrehozása ` Categories2 `
-```
+```sql
 -- NR 1b. #####################################
 -- tábla létrehozása Categories2
 CREATE TABLE Categories2 (
@@ -157,7 +157,7 @@ category_name VARCHAR(20) NOT NULL
 
 ```
 
-```
+```sql
 -- adatok felvitele Categories2
 INSERT INTO Categories2 (category_name) VALUES
 ('Alaplapok'), -- 1
@@ -170,7 +170,7 @@ INSERT INTO Categories2 (category_name) VALUES
 
 ```
 
-```
+```sql
 
 -- tábla létrehozása Products2 (Foreign Key-el összekötve
 CREATE TABLE Produts2(
@@ -183,7 +183,7 @@ CREATE TABLE Produts2(
 
 ```
 
-```
+```sql
 -- adatok felvitele Products2 (a szöveges kategóriák helyett a Categories2 táblát össekötjük
 INSERT INTO Produts2 (product_name, category_id, price) VALUES
 ('Normál alaplap', 1, 29990.00), -- 1
