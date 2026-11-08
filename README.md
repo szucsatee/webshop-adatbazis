@@ -220,6 +220,21 @@ INSERT INTO Produts2 (product_name, category_id, price) VALUES
 ## Hasznos SQL Lekérdezések (Riportok)
 
 ### 1. Részletes Megrendelés Lista (Minden adat összekapcsolva)
+
+a `Customers` tábla listázása
+```sql
+-- Customers listázása
+SELECT * FROM Customers; 
+
+```
+
+<img width="814" height="477" alt="image" src="https://github.com/user-attachments/assets/3ed366a5-5d40-4966-a6a6-4cca9c950d7d" />
+
+
+
+
+
+
 Ez a lekérdezés emberi fogyasztásra alkalmas formában listázza ki az összes beérkezett rendelést.
 
 
