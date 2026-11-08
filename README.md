@@ -222,7 +222,25 @@ INSERT INTO Produts2 (product_name, category_id, price) VALUES
 ### 1. Részletes Megrendelés Lista (Minden adat összekapcsolva)
 Ez a lekérdezés emberi fogyasztásra alkalmas formában listázza ki az összes beérkezett rendelést.
 
+
 ```sql
+-- összes megrendelés listázása elnevezés nélkül ... csúnyán 
+SELECT *
+FROM Orders                                                        -- az Orders "dobozt"
+JOIN Customers ON Orders.customer_id = Customers.customer_id       -- össekötjük a customer_id -val
+JOIN Order_items ON Orders.order_id = Order_items.order_id         -- össekötjük az order_id -val 
+JOIN Produts ON Order_items.products_id = Produts.products_id      -- össekötjük a products_id -val
+JOIN Payments ON Orders.payment_id = Payments.payment_id           -- össekötjük a payment_id -val
+JOIN Shipping ON Orders.shipping_id = Shipping.shipping_id         -- össekötjük a szállítási móddal
+ORDER BY Orders.order_id;                                          -- növekvőbe tesszük a megrendelést order_id szerint
+```
+
+
+
+
+```sql
+-- összes megrendelés listázása "elnevezve" mint...
+-- ugyanaz a lekérdezés, csak elnevezve
 SELECT 
     Orders.order_id AS 'Rendelés ID',
     Customers.name AS 'Vásárló neve',
