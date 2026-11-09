@@ -96,7 +96,7 @@ CREATE TABLE Customers (
     phone_number VARCHAR(50)
 );
 ```
-insert into-val feltöltjük a táblát
+az `insert into `-val feltöltjük a táblát
 
 ` Customers ` tábla adatainak feltöltése:
 
@@ -184,6 +184,7 @@ CREATE TABLE Produts2(
 
 ```
 
+az `INSERT INTO` -val `FOREIGN KEY` -jel feltöltjük a `Products2` táblát
 ```sql
 -- adatok felvitele Products2 (a szöveges kategóriák helyett a Categories2 táblát össekötjük
 INSERT INTO Produts2 (product_name, category_id, price) VALUES
