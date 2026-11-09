@@ -23,7 +23,7 @@ Ezt választottam:
 
 A feladatban megismerkedünk  a ` CREATE ` , a ` USE ` , za ` INSERT INTO ` , a ` FOREIGN KEY `, a ` JOIN ` valamint a ` LEFT JOIN `  vagy akár az ` AS ` , a ` WHERE `, az ` UPDATE ` paranccsal.
 
-Elsőként az adatbázis létrehozását és használatát kérjük a rendszertől.
+Első dolgunk az adatbázis létrehozása és használata, amire így kérjük a rendszert.
 
 Ezt az alábbi paranccsal tehetjük meg:
 
@@ -40,6 +40,7 @@ USE DATABASE WEBSHOP_ADATBAZIS;
 ```
 
 ezzel létrehoztuk és használatra bírtuk az adatbázist.
+
 
 * FONTOS - a `CREATE DATABASE ` és `USE DATABASE` paranc a választott online szerkesztőben nem fog működni, mert ez egy előre korlátozott MySQL adatbázis.
 
