@@ -319,5 +319,8 @@ LEFT JOIN Orders ON Customers.customer_id = Orders.customer_id
 WHERE Orders.order_id IS NULL; -- Csak azokat tartja meg, akikhez nem kapcsolódik rendelés
 ```
 
+<img width="1269" height="211" alt="image" src="https://github.com/user-attachments/assets/128588d1-ec6e-4008-8456-3b83951888f8" />
+
+
 ---
 
