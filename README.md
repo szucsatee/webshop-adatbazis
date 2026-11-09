@@ -146,7 +146,7 @@ INSERT INTO Shipping (shipping_method)VALUES
 
 
 
-egy FOREIGN kEY-s tábla létrehozása ` Categories2 `
+egy FOREIGN kEY-s tábla létrehozása ` Prodcts2 ` tábla összeköt ` Categories2 ` táblával
 ```sql
 -- NR 1b. #####################################
 -- tábla létrehozása Categories2
@@ -309,11 +309,14 @@ GROUP BY Produts.category
 ORDER BY SUM(Produts.price * Order_items.quantity) DESC;
 ```
 
-### 4. Passzív vásárlók keresése (Akik még sohssem rendeltek)
+
+### 4. Passzív vásárlók (Akik még sohssem rendeltek)
 ```sql
-SELECT Customers.name, Customers.email FROM Customers
+-- vásárlók akik nem rendeltek ... a LEFT JOIN
+-- ------------------------------------------
+SELECT * FROM Customers
 LEFT JOIN Orders ON Customers.customer_id = Orders.customer_id
-WHERE Orders.order_id IS NULL;
+WHERE Orders.order_id IS NULL; -- Csak azokat tartja meg, akikhez nem kapcsolódik rendelés
 ```
 
 ---
