@@ -21,7 +21,7 @@ Ezt választottam:
 
 ## A feladatunk lesz egy képzeletbeli informatikai webshop adatbázisának elkészítése.
 
-A feladatban a ` CREATE ` , za ` INSERT INTO ` , a ` FOREIGN KEY `, a ` JOIN ` valamint a ` LEFT JOIN `  vagy akár az ` AS ` paranccsal ismerkedünk meg.
+A feladatban a ` CREATE ` , za ` INSERT INTO ` , a ` FOREIGN KEY `, a ` JOIN ` valamint a ` LEFT JOIN `  vagy akár az ` AS ` , a ` WHERE ` paranccsal ismerkedünk meg.
 
 Elsőként az adatbázis létrehozását és használatát kérjük a rendszertől.
 
