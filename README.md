@@ -3,7 +3,7 @@
 Egy egyszerűsített informatikai webáruház adatbázis-modellje elkészítése a célom, mely bemutatja az entitások közötti kapcsolatokat, és statisztikai lekérdezéseket.
 
 
-  
+
 A munkát a tudásom megalapozásával kezdtem.
 Az abszolút kezdőknek, mint én, ajánlom, hogy olvassák el ezeket a cikkeket:
 
