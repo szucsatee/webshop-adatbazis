@@ -72,6 +72,7 @@ Adatbázistáblák listája
 * **Order_items:** A rendelések tételei, vagyis hogy egy adott rendelésben milyen termékből hány darabot vásároltak.
 
 <ins>2.2. SQL adattípusok<ins>
+
 Az adatbázis-kezelés során fontos szerepet játszanak az adattípusok. Ezek határozzák meg, hogy egy adott oszlopban milyen típusú értékeket tárolhatunk.
 
 Az SQL-ben minden oszlophoz meg kell határozni az adattípust a tábla létrehozásakor. Ez biztosítja, hogy az adatok megfelelő formátumban kerüljenek az adatbázisba.
