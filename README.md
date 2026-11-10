@@ -13,7 +13,7 @@ A projekt megvalósítását az alapvető ismeretek elsajátításával kezdtem.
 
 Az alapok elsajátítását követően egy olyan online felületet "játszóteret" kerestem, ahol böngészőből, telepítés nélkül tudok kísérletezni és gyakorolni.
 
-Végül az alábbi oldal mellett döntöttem:
+Végül az alábbi oldalt választottam:
 
 [MySQL Online ](https://onecompiler.com/mysql "Online MySQL lekérdezés futtató")
 
@@ -21,35 +21,33 @@ Végül az alábbi oldal mellett döntöttem:
 
 ## A feladatunk lesz egy képzeletbeli informatikai webshop adatbázisának elkészítése.
 
-A feladatban megismerkedünk  a ` CREATE ` , a ` USE ` , za ` INSERT INTO ` , a ` FOREIGN KEY `, a ` JOIN ` valamint a ` LEFT JOIN `  vagy akár az ` AS ` , a ` WHERE `, az ` UPDATE ` paranccsal.
+A feladat során több fontos SQL-paranccsal, azok gyakorlati alkalmazásával ismerkedünk meg. Többek között a `CREATE`, a `USE`, za `INSERT INTO`, a `FOREIGN KEY`, a `JOIN`, a `LEFT JOIN`, az `AS`, a `WHERE` és az `UPDATE` használatát gyakoroljuk.
 
-Első dolgunk az adatbázis létrehozása és használata, amire így kérjük a rendszert.
+<ins> 1. Az adatbázis létrehozása és használata <ins>
+Első lépésként létrehozzuk ` CREATE DATABASE ` paranccsal a webáruház adatbázisát, majd beállítjuk a ` USE ` paranccsal, hogy a következőkbenn ebben tudjunk dolgozni.
 
-Ezt az alábbi paranccsal tehetjük meg:
-
-létrehozzuk az adatbázis a `CREATE` paranccsal.
 
 ```sql
 CREATE DATABASE webshop_adatbazis;
 ```
 
-az elkészített adatbázist A ` USE` paranccsal használjuk, hogy tudjunk benne dolgozni.
+A létrehozott adatbázis kiválasztásához a ` USE ` parancsot használjuk:
 
 ```sql
-USE DATABASE WEBSHOP_ADATBAZIS;
+USE DATABASE WEBSHOP_ADATBAZIS; -
 ```
 
-ezzel létrehoztuk és használatra bírtuk az adatbázist.
+Ezzel sikeresen létrehoztuk és kiválasztottuk az adatbázist, amit létrehoztunk így megkezdhetjük a táblák létrehozását és az adatok feltöltését.
 
 
-* FONTOS - a `CREATE DATABASE ` és `USE DATABASE` paranc a választott online szerkesztőben nem fog működni, mert ez egy előre korlátozott MySQL adatbázis.
-
-
-
+* FONTOS - a `CREATE DATABASE ` és `USE` paranc a választott online szerkesztőben nem fog működni, mert ez egy előre korlátozott MySQL adatbázis.
 
 
 
-### <ins> Táblák elkészítése: <ins>
+
+
+
+### <ins> 2. Táblák elkészítése: <ins>
 
 Az adatbázis logikailag úgy épül fel, hogy a megrendelések leadásához a törzsadatoknak (kategóriák, vásárlók, termékek, fizetési és szállítási módok) már létezniük kell a rendszerben.
 * a való életben előbb dobáljuk a kosárba a termékeket, csak aztán adjuk meg az adatainkat, a fizetési módot, kiszállítási módot. Ám a felépített rendszer áll mögötte. Próbáltam más módon is elkészíteni, de nem működött.
