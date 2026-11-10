@@ -58,7 +58,7 @@ A való életben először a termékeket helyezzük a kosárba, és csak a rende
 Próbálkoztam másfajta felépítéssel is, de végül ennél maradtam, mert így sikerült megfelelően kialakítanom az adatbázis kapcsolatait.
 
 
-2.1. A törzsadatok létrehozása
+<ins>2.1. A törzsadatok létrehozása<ins>
 
 Első lépésként a törzsadatokat tartalmazó táblákat hoztam létre. Ezek biztosítják az alapot a későbbi rendelések és a hozzájuk kapcsolódó adatok kezeléséhez.
 
@@ -71,54 +71,23 @@ Adatbázistáblák listája
 * **Orders:** A rendelések főbb adatai, például a vásárló, a fizetési és a szállítási mód.
 * **Order_items:** A rendelések tételei, vagyis hogy egy adott rendelésben milyen termékből hány darabot vásároltak.
 
-2.2. SQL adattípusok
+<ins>2.2. SQL adattípusok<ins>
 Az adatbázis-kezelés során fontos szerepet játszanak az adattípusok. Ezek határozzák meg, hogy egy adott oszlopban milyen típusú értékeket tárolhatunk.
 
 Az SQL-ben minden oszlophoz meg kell határozni az adattípust a tábla létrehozásakor. Ez biztosítja, hogy az adatok megfelelő formátumban kerüljenek az adatbázisba.
 
 A MySQL adattípusait három fő csoportba sorolhatjuk:
 
-Szöveges adattípusok: például VARCHAR, TEXT.
-Szám típusú adattípusok: például INT, DECIMAL.
-Dátum- és időtípusok: például DATE, DATETIME, TIME.
+* Szöveges adattípusok: például VARCHAR, TEXT.
+* Szám típusú adattípusok: például INT, DECIMAL.
+* Dátum- és időtípusok: például DATE, DATETIME, TIME.
+* 
 Az adatbázisban használható adattípusokról bővebben az alábbi oldalon olvashatsz:
----------------------
-
-
-### <ins> 2.  Táblák elkészítése: <ins>
-
-Az adatbázis logikailag úgy épül fel, hogy a megrendelések leadásához a törzsadatoknak (kategóriák, vásárlók, termékek, fizetési és szállítási módok) már létezniük kell a rendszerben.
-* a való életben előbb dobáljuk a kosárba a termékeket, csak aztán adjuk meg az adatainkat, a fizetési módot, kiszállítási módot. Ám a felépített rendszer áll mögötte. Próbáltam más módon is elkészíteni, de nem működött.
-
-Először a törzsadatokat fogjk elkészíteni.
-  
-### Adatbázis táblák listája:
-*   **Categories:** Termékkategóriák (Alaplapok, Processzorok, stb.)
-*   **Customers:** Regisztrált vásárlók adatai.
-*   **Payments** Elérhető fizetési módok
-*   Shipping:** Elérhető szállítási módok.
-*   **Produts:** A webshopban elérhető alkatrészek és szoftverek árakkal. ( itt a Foreign key használata )
-*   **Orders:** A rendelések törzsadatai (Ki rendelte, hogyan fizetett, mivel kéri a kiszállítást).
-*   **Order_items:** A kosár tartalma (Melyik rendelésben milyen termékből mennyit vettek).
-*   
-
-SQL adattípusok
-Egy adatbázis-kezelő esetében az adattípusok határozzák meg azt, hogy egy oszlop milyen értéket vehet fel. Az SQL elvei szerint, egy oszlopnak (mezőnek) minden esetben meg kell határozni az adattípusát már a tábla létrehozásakor, ez mutatja meg, hogy az egyes oszlopokban milyen adatokat, értékeket lehet tárolni.
-
-A MySQL-ben három főkategóriába sorolhatóak az adattípusok:
-
-szöveg
-* szám
-* dátum
-* idő
-
-az adatbázisban használt adattípusokról itt olvashatsz többet:
-
 
 [Adattípusok a mySQL-ben ](https://webiskola.hu/sql-ismeretek/adattipusok-mysql-ben/ )
 
 
-###  <ins> Táblák létrehozása: <ins>
+###  <ins> 3. Táblák létrehozása: <ins>
 
 
 A ` Customers ` tábla létrehozása:
@@ -255,7 +224,7 @@ INSERT INTO Produts2 (product_name, category_id, price) VALUES
 
 
 
-## Alap lekérdezések:
+## <ins> 4. Alap lekérdezések:<ins>
 
 ### 1. a törzsadatok listázása
 
