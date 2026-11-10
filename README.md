@@ -23,7 +23,7 @@ Végül az alábbi oldalt választottam:
 
 A feladat során több fontos SQL-paranccsal, azok gyakorlati alkalmazásával ismerkedünk meg. Többek között a `CREATE`, a `USE`, za `INSERT INTO`, a `FOREIGN KEY`, a `JOIN`, a `LEFT JOIN`, az `AS`, a `WHERE` és az `UPDATE` használatát gyakoroljuk.
 
-<ins> 1. Az adatbázis létrehozása és használata <ins>
+### <ins> 1. Az adatbázis létrehozása és használata<ins>
 Első lépésként létrehozzuk ` CREATE DATABASE ` paranccsal a webáruház adatbázisát, majd beállítjuk a ` USE ` paranccsal, hogy a következőkbenn ebben tudjunk dolgozni.
 
 
@@ -47,7 +47,7 @@ Ezzel sikeresen létrehoztuk és kiválasztottuk az adatbázist, amit létrehozt
 
 
 
-### <ins> 2. Táblák elkészítése: <ins>
+### <ins> 2.  Táblák elkészítése: <ins>
 
 Az adatbázis logikailag úgy épül fel, hogy a megrendelések leadásához a törzsadatoknak (kategóriák, vásárlók, termékek, fizetési és szállítási módok) már létezniük kell a rendszerben.
 * a való életben előbb dobáljuk a kosárba a termékeket, csak aztán adjuk meg az adatainkat, a fizetési módot, kiszállítási módot. Ám a felépített rendszer áll mögötte. Próbáltam más módon is elkészíteni, de nem működött.
