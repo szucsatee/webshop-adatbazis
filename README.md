@@ -5,8 +5,7 @@ Egy egyszerűsített informatikai webáruház adatbázis-modellje elkészítése
 
 ## A tanulási folyamat 
 
-A munkát a tudásom megalapozásával kezdtem.
-Az abszolút kezdőknek, mint én, ajánlom, hogy olvassák el ezeket a cikkeket:
+A projekt megvalósítását az alapvető ismeretek elsajátításával kezdtem. Hozzám hasonlóan azoknak, akik még csak most ismerkednek a témával, az alábbi cikkeket ajánlom kiindulópontként:
 
 [SQL alapok kezdőknek](https://webiskola.hu/sql-alapok-kezdoknek/ "SQL alapok kezdőknek")
 
