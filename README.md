@@ -44,7 +44,45 @@ Ezzel sikeresen létrehoztuk és kiválasztottuk az adatbázist, amit létrehozt
 
 
 
+---------------
 
+
+
+### <ins> 2. Az adatbázis felépítése és a táblák tervezése, elkészítése:<ins>
+
+Az adatbázis logikai felépítésénél abból indultam ki, hogy a rendelések rögzítéséhez először a szükséges törzsadatoknak kell rendelkezésre állniuk. Ide tartoznak például a kategóriák, vásárlók, termékek, fizetési és szállítási módok.
+
+
+A való életben először a termékeket helyezzük a kosárba, és csak a rendelés véglegesítésekor adjuk meg a vásárlói adatainkat, illetve választjuk ki a fizetési és szállítási módot, ám a felépített rendszer áll mögötte.
+
+Próbálkoztam másfajta felépítéssel is, de végül ennél maradtam, mert így sikerült megfelelően kialakítanom az adatbázis kapcsolatait.
+
+
+2.1. A törzsadatok létrehozása
+
+Első lépésként a törzsadatokat tartalmazó táblákat hoztam létre. Ezek biztosítják az alapot a későbbi rendelések és a hozzájuk kapcsolódó adatok kezeléséhez.
+
+Adatbázistáblák listája
+* **Categories:** Termékkategóriák (pl. alaplapok, processzorok).
+* **Customers:** A regisztrált vásárlók adatai.
+* **Payments:** Az elérhető fizetési módok.
+* **Shipping:** Az elérhető szállítási módok.
+* **Products:** A webáruházban elérhető alkatrészek és szoftverek, árakkal együtt. A kategóriákhoz való kapcsolódásnál a FOREIGN KEY használatával ismerkedünk meg.
+* **Orders:** A rendelések főbb adatai, például a vásárló, a fizetési és a szállítási mód.
+* **Order_items:** A rendelések tételei, vagyis hogy egy adott rendelésben milyen termékből hány darabot vásároltak.
+
+2.2. SQL adattípusok
+Az adatbázis-kezelés során fontos szerepet játszanak az adattípusok. Ezek határozzák meg, hogy egy adott oszlopban milyen típusú értékeket tárolhatunk.
+
+Az SQL-ben minden oszlophoz meg kell határozni az adattípust a tábla létrehozásakor. Ez biztosítja, hogy az adatok megfelelő formátumban kerüljenek az adatbázisba.
+
+A MySQL adattípusait három fő csoportba sorolhatjuk:
+
+Szöveges adattípusok: például VARCHAR, TEXT.
+Szám típusú adattípusok: például INT, DECIMAL.
+Dátum- és időtípusok: például DATE, DATETIME, TIME.
+Az adatbázisban használható adattípusokról bővebben az alábbi oldalon olvashatsz:
+---------------------
 
 
 ### <ins> 2.  Táblák elkészítése: <ins>
