@@ -4,6 +4,7 @@ Egy egyszerűsített informatikai webáruház adatbázis-modellje elkészítése
 
 
 
+
 A munkát a tudásom megalapozásával kezdtem.
 Az abszolút kezdőknek, mint én, ajánlom, hogy olvassák el ezeket a cikkeket:
 
