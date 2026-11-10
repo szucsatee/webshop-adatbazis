@@ -11,9 +11,9 @@ A projekt megvalósítását az alapvető ismeretek elsajátításával kezdtem.
 
 
 
-Az alapok elsajátítása után, egy olyan online elérhető felületet ,"játszóteret" kerestem, amit böngészőből tudok futtatni.
+Az alapok elsajátítását követően egy olyan online felületet "játszóteret" kerestem, ahol böngészőből, telepítés nélkül tudok kísérletezni és gyakorolni.
 
-Ezt választottam:
+Végül az alábbi oldal mellett döntöttem:
 
 [MySQL Online ](https://onecompiler.com/mysql "Online MySQL lekérdezés futtató")
 
