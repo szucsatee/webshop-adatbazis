@@ -23,7 +23,7 @@ Végül az alábbi oldalt választottam:
 
 A feladat során több fontos SQL-paranccsal, azok gyakorlati alkalmazásával ismerkedünk meg. Többek között a `CREATE`, a `USE`, za `INSERT INTO`, a `FOREIGN KEY`, a `JOIN`, a `LEFT JOIN`, az `AS`, a `WHERE` és az `UPDATE` használatát gyakoroljuk.
 
-### <ins> 1. Az adatbázis létrehozása és használata<ins>
+### <ins> 1.  Az adatbázis létrehozása és használata<ins>
 Első lépésként létrehozzuk ` CREATE DATABASE ` paranccsal a webáruház adatbázisát, majd beállítjuk a ` USE ` paranccsal, hogy a következőkbenn ebben tudjunk dolgozni.
 
 
