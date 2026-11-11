@@ -131,7 +131,7 @@ INSERT INTO Customers (name, email, phone_number) VALUES
 
 
 
-a ` Shipping ` tábla létrehozása
+a ` Shipping` tábla létrehozása szintén a `CREATE` paranccsal:
 
 ```sql
 -- Shipping tábla létrehozása
@@ -142,6 +142,8 @@ CREATE TABLE Shipping(
 
 ```
 
+
+az adatok feltöltése a ` Shipping` táblába `INSERT INTO ` paranccsal.
 ```sql
 -- adatok felvitele Shipping táblába
 INSERT INTO Shipping (shipping_method)VALUES
@@ -156,7 +158,9 @@ INSERT INTO Shipping (shipping_method)VALUES
 
 
 
-egy FOREIGN kEY-s tábla létrehozása ` Prodcts2 ` tábla összeköt ` Categories2 ` táblával
+egy FOREIGN kEY-s tábla létrehozása `Prodcts2` tábla összeköt ` Categories2 ` táblával
+
+a ` Categories2 ` tábla létrehozása ismét a `CREATE` paranccsal:
 ```sql
 -- NR 1b. #####################################
 -- tábla létrehozása Categories2
@@ -166,6 +170,8 @@ category_name VARCHAR(20) NOT NULL
 );
 
 ```
+
+adatok feltöltése a `Categories2` táblába az `INsERT INTO` paranccsal:
 
 ```sql
 -- adatok felvitele Categories2
@@ -180,6 +186,9 @@ INSERT INTO Categories2 (category_name) VALUES
 
 ```
 
+
+a `Products2` tábla létrehozása ismét a `CREATE` paranccsal, `FOREIGN KEY`-jel.
+a `(category_id)` -re hivatkozunk a `Categories2` táblából.
 ```sql
 
 -- tábla létrehozása Products2 (Foreign Key-el összekötve
@@ -193,7 +202,7 @@ CREATE TABLE Produts2(
 
 ```
 
-az `INSERT INTO` -val `FOREIGN KEY` -jel feltöltjük a `Products2` táblát
+az adatok felt0öltése `INSERT INTO` paranccsal `FOREIGN KEY` -jel a `Products2` táblába:
 ```sql
 -- adatok felvitele Products2 (a szöveges kategóriák helyett a Categories2 táblát össekötjük
 INSERT INTO Produts2 (product_name, category_id, price) VALUES
@@ -222,6 +231,7 @@ INSERT INTO Produts2 (product_name, category_id, price) VALUES
 ```
 
 
+A törzsadatokat elkészítettük, rendeléseket generáltunk.
 
 --------------------------------------------------
 
