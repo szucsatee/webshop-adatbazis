@@ -1,6 +1,6 @@
 # PC Webshop Adatbázis Tervezés - relációs adatbázis
 
-Egy egyszerűsített informatikai webáruház adatbázis-modellje elkészítése a célom, mely bemutatja az entitások közötti kapcsolatokat, és statisztikai lekérdezéseket.
+Egy egyszerűsített informatikai webáruház adatbázis-modelljének elkészítése a célom, amely bemutatja az entitások közötti kapcsolatokat, és statisztikai lekérdezéseket.
 
 
 ## A tanulási folyamat 
@@ -21,7 +21,10 @@ Végül az alábbi oldalt választottam:
 
 ## A feladatunk lesz egy képzeletbeli informatikai webshop adatbázisának elkészítése.
 
-A feladat során több fontos SQL-paranccsal, azok gyakorlati alkalmazásával ismerkedünk meg. Többek között a `CREATE`, a `USE`, za `INSERT INTO`, a `FOREIGN KEY`, a `JOIN`, a `LEFT JOIN`, az `AS`, a `WHERE` és az `UPDATE` használatát gyakoroljuk.
+A feladat során több fontos SQL-paranccsal, és azok gyakorlati alkalmazásával ismerkedünk meg. 
+
+
+Többek között a `CREATE`, a `USE`, za `INSERT INTO`, a `FOREIGN KEY`, a `JOIN`, a `LEFT JOIN`, az `AS`, a `WHERE` és az `UPDATE` használatát gyakoroljuk.
 
 ### <ins> 1.  Az adatbázis létrehozása és használata<ins>
 Első lépésként létrehozzuk ` CREATE DATABASE ` paranccsal a webáruház adatbázisát, majd beállítjuk a ` USE ` paranccsal, hogy a következőkbenn ebben tudjunk dolgozni.
@@ -91,7 +94,7 @@ Az adatbázisban használható adattípusokról bővebben az alábbi oldalon olv
 ###  <ins> 3. Táblák létrehozása: <ins>
 
 
-A ` Customers ` tábla létrehozása:
+A `Customers` tábla létrehozása a `CREATE` paranccsal:
 
 ```sql
 -- Customers tábla létrehozása
@@ -102,9 +105,9 @@ CREATE TABLE Customers (
     phone_number VARCHAR(50)
 );
 ```
-az `insert into `-val feltöltjük a táblát
 
-` Customers ` tábla adatainak feltöltése:
+
+az adatok feltöltése a `Customers` táblába `INSERT INTO ` paranccsal.
 
 ```sql
 -- adatok felvitele Customers táblába (bővített lista)
