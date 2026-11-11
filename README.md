@@ -242,7 +242,9 @@ A törzsadatokat elkészítettük, rendeléseket generáltunk.
 
 ### 1. a törzsadatok listázása
 
-a `Customers` tábla listázása
+a `Customers` tábla listázása a `SELECT` paranccsal:
+
+
 
 ```sql
 -- Customers listázása
