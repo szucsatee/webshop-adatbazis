@@ -353,7 +353,7 @@ JOIN Produts ON Order_items.products_id = Produts.products_id
 GROUP BY Produts.category
 ORDER BY SUM(Produts.price * Order_items.quantity) DESC; -- ez rakja csökkenő sorrendbe ár szerint
 ```
-<img width="500" alt="image" src="https://github.com/user-attachments/assets/f53422b2-81b8-468e-b7ff-3452e1bc84d5" />
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/f53422b2-81b8-468e-b7ff-3452e1bc84d5" />
 
 
 
