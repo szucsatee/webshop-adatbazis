@@ -265,6 +265,15 @@ SELECT * FROM Shipping;
 <img width="426" height="243" alt="image" src="https://github.com/user-attachments/assets/88203d31-316e-4a04-b81c-756c2dbdc068" />
 
 
+a `Products` tábla listázása `FOREIGN KEY nélkül`, listázással:
+
+<img width="707" height="654" alt="image" src="https://github.com/user-attachments/assets/040e37eb-fa4a-450a-a24f-b7bfea99907a" />
+
+
+A `Products2` listázása `FOREIGN KEY -jel`:
+
+<img width="681" height="658" alt="image" src="https://github.com/user-attachments/assets/b6502ad8-e921-4632-9158-d667f5297234" />
+
 
 
 ## Hasznos SQL Lekérdezések (Riportok)
