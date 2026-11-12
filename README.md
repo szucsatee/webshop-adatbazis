@@ -358,7 +358,7 @@ SELECT
 FROM Order_items
 JOIN Produts ON Order_items.products_id = Produts.products_id;
 ```
-<img width="904" height="133" alt="image" src="https://github.com/user-attachments/assets/0b080ca9-885d-4925-9ad5-4bd515afa2db" />
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/0b080ca9-885d-4925-9ad5-4bd515afa2db" />
 
 
 
