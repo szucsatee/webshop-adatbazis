@@ -262,7 +262,7 @@ a `Shipping` tábla listázása
 SELECT * FROM Shipping;
 ```
 
-<img width="300" alt="image" src="https://github.com/user-attachments/assets/88203d31-316e-4a04-b81c-756c2dbdc068" />
+<img width="350" alt="image" src="https://github.com/user-attachments/assets/88203d31-316e-4a04-b81c-756c2dbdc068" />
 
 
 a `Products` tábla listázása `FOREIGN KEY nélkül`, listázással:
