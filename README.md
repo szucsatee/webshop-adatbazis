@@ -267,7 +267,7 @@ SELECT * FROM Shipping;
 
 a `Products` tábla listázása `FOREIGN KEY nélkül`, listázással:
 
-<img width="600" alt="image" src="https://github.com/user-attachments/assets/040e37eb-fa4a-450a-a24f-b7bfea99907a" />
+<img width="550" alt="image" src="https://github.com/user-attachments/assets/040e37eb-fa4a-450a-a24f-b7bfea99907a" />
 
 
 A `Products2` listázása `FOREIGN KEY -jel`:
