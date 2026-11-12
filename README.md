@@ -272,7 +272,7 @@ a `Products` tábla listázása `FOREIGN KEY nélkül`, listázással:
 
 A `Products2` listázása `FOREIGN KEY -jel`:
 
-<img width="681" height="658" alt="image" src="https://github.com/user-attachments/assets/b6502ad8-e921-4632-9158-d667f5297234" />
+<img width="550" alt="image" src="https://github.com/user-attachments/assets/b6502ad8-e921-4632-9158-d667f5297234" />
 
 
 Az összes megrendelés listázása elnevezve mint...:
