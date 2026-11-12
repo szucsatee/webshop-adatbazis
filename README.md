@@ -275,6 +275,29 @@ A `Products2` listázása `FOREIGN KEY -jel`:
 <img width="550" alt="image" src="https://github.com/user-attachments/assets/b6502ad8-e921-4632-9158-d667f5297234" />
 
 
+
+
+# Hasznos SQL Lekérdezések (Riportok)
+
+### 1. Részletes Megrendelés Lista (Minden adat összekapcsolva)
+
+Ez a lekérdezés emberi fogyasztásra alkalmas formában listázza ki az összes beérkezett rendelést.
+
+
+```sql
+-- összes megrendelés listázása elnevezés nélkül ... csúnyán 
+SELECT *
+FROM Orders                                                        -- az Orders "dobozt"
+JOIN Customers ON Orders.customer_id = Customers.customer_id       -- össekötjük a customer_id -val
+JOIN Order_items ON Orders.order_id = Order_items.order_id         -- össekötjük az order_id -val 
+JOIN Produts ON Order_items.products_id = Produts.products_id      -- össekötjük a products_id -val
+JOIN Payments ON Orders.payment_id = Payments.payment_id           -- össekötjük a payment_id -val
+JOIN Shipping ON Orders.shipping_id = Shipping.shipping_id         -- össekötjük a szállítási móddal
+ORDER BY Orders.order_id;                                          -- növekvőbe tesszük a megrendelést order_id szerint
+```
+
+
+
 Az összes megrendelés listázása elnevezve mint...:
 
 
@@ -302,51 +325,6 @@ ORDER BY Orders.order_id;
 
 <img width="1571" height="533" alt="image" src="https://github.com/user-attachments/assets/dec312e2-9962-4711-8774-c322ac579b6b" />
 
-
-
-# Hasznos SQL Lekérdezések (Riportok)
-
-### 1. Részletes Megrendelés Lista (Minden adat összekapcsolva)
-
-Ez a lekérdezés emberi fogyasztásra alkalmas formában listázza ki az összes beérkezett rendelést.
-
-
-```sql
--- összes megrendelés listázása elnevezés nélkül ... csúnyán 
-SELECT *
-FROM Orders                                                        -- az Orders "dobozt"
-JOIN Customers ON Orders.customer_id = Customers.customer_id       -- össekötjük a customer_id -val
-JOIN Order_items ON Orders.order_id = Order_items.order_id         -- össekötjük az order_id -val 
-JOIN Produts ON Order_items.products_id = Produts.products_id      -- össekötjük a products_id -val
-JOIN Payments ON Orders.payment_id = Payments.payment_id           -- össekötjük a payment_id -val
-JOIN Shipping ON Orders.shipping_id = Shipping.shipping_id         -- össekötjük a szállítási móddal
-ORDER BY Orders.order_id;                                          -- növekvőbe tesszük a megrendelést order_id szerint
-```
-
-
-
-
-```sql
-
--- összes megrendelés listázása "elnevezve" mint...
--- ugyanaz a lekérdezés, csak elnevezve
-SELECT 
-    Orders.order_id AS 'Rendelés ID',
-    Customers.name AS 'Vásárló neve',
-    Produts.product_name AS 'Termék',
-    Produts.price AS 'Egységár (Ft)',
-    Order_items.quantity AS 'Mennyiség',
-    (Produts.price * Order_items.quantity) AS 'Részösszeg (Ft)', 
-    Payments.payment_method AS 'Fizetési mód',
-    Shipping.shipping_method AS 'Szállítási mód'
-FROM Orders                                                   -- összekötjük a JOIN paranccsal mint feljebb, de már AS paranccsal elnevezve
-JOIN Customers ON Orders.customer_id = Customers.customer_id
-JOIN Order_items ON Orders.order_id = Order_items.order_id
-JOIN Produts ON Order_items.products_id = Produts.products_id
-JOIN Payments ON Orders.payment_id = Payments.payment_id
-JOIN Shipping ON Orders.shipping_id = Shipping.shipping_id
-ORDER BY Orders.order_id;
-```
 
 ### 2. Webáruház teljes bevétele:
 
