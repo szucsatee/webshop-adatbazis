@@ -252,7 +252,7 @@ SELECT * FROM Customers;
 
 ```
 
-<img width="800" height="475" alt="image" src="https://github.com/user-attachments/assets/fdf1ee9f-01a9-4672-9284-e4de8e4f4b71" />
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/fdf1ee9f-01a9-4672-9284-e4de8e4f4b71" />
 
 
 a `Shipping` tábla listázása
