@@ -252,7 +252,8 @@ SELECT * FROM Customers;
 
 ```
 
-<img width="814" height="477" alt="image" src="https://github.com/user-attachments/assets/3ed366a5-5d40-4966-a6a6-4cca9c950d7d" />
+<img width="800" height="475" alt="image" src="https://github.com/user-attachments/assets/fdf1ee9f-01a9-4672-9284-e4de8e4f4b71" />
+
 
 a `Shipping` tábla listázása
 
@@ -261,7 +262,8 @@ a `Shipping` tábla listázása
 SELECT * FROM Shipping;
 ```
 
-<img width="442" height="242" alt="image" src="https://github.com/user-attachments/assets/38b63800-5396-409a-83ed-a684e0f84cbc" />
+<img width="426" height="243" alt="image" src="https://github.com/user-attachments/assets/88203d31-316e-4a04-b81c-756c2dbdc068" />
+
 
 
 
