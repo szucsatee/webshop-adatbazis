@@ -280,8 +280,7 @@ A `Products2` listázása `FOREIGN KEY -jel`:
 # Hasznos SQL Lekérdezések (Riportok)
 
 ### 1. Részletes Megrendelés Lista (Minden adat összekapcsolva)
-
-Ez a lekérdezés emberi fogyasztásra alkalmas formában listázza ki az összes beérkezett rendelést.
+Ez a lekérdezés átlátható formában listázza ki az összes beérkezett megrendelést.
 
 
 ```sql
@@ -296,6 +295,11 @@ JOIN Shipping ON Orders.shipping_id = Shipping.shipping_id         -- össekötj
 ORDER BY Orders.order_id;                                          -- növekvőbe tesszük a megrendelést order_id szerint
 ```
 
+<img width="1592" alt="image" src="https://github.com/user-attachments/assets/722c3b33-b2fe-43e2-aab1-5e84ea09efa2" />
+
+
+
+A lekérdezés túl sok felesleges oszlopot tartalmaz,
 
 
 Az összes megrendelés listázása elnevezve mint...:
