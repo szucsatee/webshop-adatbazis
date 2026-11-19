@@ -299,10 +299,9 @@ ORDER BY Orders.order_id;                                          -- növekvőb
 
 
 
-A lekérdezés túl sok felesleges oszlopot tartalmaz,
 
+A lekérdezés túl sok, az avatatlan szemnek ismeretlen oszlopot tartalmaz, ezért a szükséges és érthető adatokat elnevezzük `AS` paranccsal:
 
-Az összes megrendelés listázása elnevezve mint...:
 
 
 ```sql
@@ -376,4 +375,57 @@ WHERE Orders.order_id IS NULL; -- Csak azokat tartja meg, akikhez nem kapcsolód
 
 
 ---
+
+A korábban ígért Kovács Dániel rendeléseinek listázása:
+```sql
+-- Dani miket vásárolt mint ...
+-- ----------------------------------------------------------------------------
+SELECT 
+    Orders.order_id AS 'Rendelés ID',
+    Customers.name AS 'Vásárló neve',
+    Produts.product_name AS 'Termék',
+    Produts.price AS 'Egységár (Ft)',
+    Order_items.quantity AS 'Mennyiség',
+    (Produts.price * Order_items.quantity) AS 'Részösszeg (Ft)', 
+    Payments.payment_method AS 'Fizetési mód',
+    Shipping.shipping_method AS 'Szállítási mód'
+FROM Orders
+JOIN Customers ON Orders.customer_id = Customers.customer_id
+JOIN Order_items ON Orders.order_id = Order_items.order_id
+JOIN Produts ON Order_items.products_id = Produts.products_id
+JOIN Payments ON Orders.payment_id = Payments.payment_id
+JOIN Shipping ON Orders.shipping_id = Shipping.shipping_id
+WHERE Customers.name = 'Kovács Dániel'; 
+
+```
+
+<img width="1500" alt="image" src="https://github.com/user-attachments/assets/cd23083f-419c-4b27-bf37-626db6ec676f" />
+
+
+Kovács Dániel megrendelései összesítve:
+
+```sql
+-- Dani miket vásárolt összesítve mint ...
+-- ----------------------------------------------------------------------------
+SELECT 
+    Orders.order_id AS 'Rendelés ID',
+    Customers.name AS 'Vásárló neve',
+    COUNT(Order_items.order_item_id) AS 'Kosárban lévő tételek száma',
+    SUM(Order_items.quantity) AS 'Összes termékszám (db)',
+    SUM(Produts.price * Order_items.quantity) AS 'RENDELÉS VÉGÖSSZEGE (Ft)',
+    Payments.payment_method AS 'Fizetési mód',
+    Shipping.shipping_method AS 'Szállítási mód'
+FROM Orders
+JOIN Customers ON Orders.customer_id = Customers.customer_id
+JOIN Order_items ON Orders.order_id = Order_items.order_id
+JOIN Produts ON Order_items.products_id = Produts.products_id
+JOIN Payments ON Orders.payment_id = Payments.payment_id
+JOIN Shipping ON Orders.shipping_id = Shipping.shipping_id
+WHERE Customers.name = 'Kovács Dániel'
+GROUP BY Orders.order_id, Customers.name, Payments.payment_method, Shipping.shipping_method;
+
+
+```
+
+<img width="1683" alt="image" src="https://github.com/user-attachments/assets/edd1ebb6-7afb-4992-9d86-69cd994be9a6" />
 
